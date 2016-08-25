@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ZhengNie</title>
+    <link rel="stylesheet" href="iconfont/star/iconfont.css">
+    <style>
+        html,body,ul,li{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background: #ccc;
+        }
+        ul{
+            list-style: none;
+        }
+        .clear{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .boldH{
+            font-size: 22px;
+            line-height: 22px;
+            color: #0896bf;
+            font-family: 'Helvetica Neue',Helvetica,'Lucida Grande',Arial,
+                'Hiragino Sans GB',微软雅黑,'WenQuanYi Micro Hei',STHeiti,SimSun,sans-serif;
+        }
+        #fixRight{
+            height: 200px;
+            position: fixed;
+            right: 5%;
+            top: 50%;
+            margin-top: -100px;
+            z-index: 99;
+        }
+        #fixRight>ul>li{
+            width: 100px;
+            padding: 5px;
+            background: #ccc;
+            border: 1px solid #ccc;
+            border-radius: 15px;
+            margin: 10px 0;
+        }
+        #fixRight a{
+            text-decoration: none;
+            color: #006400;
+        }
+        #myPresentation{
+            position: relative;
+            margin: 20px auto;
+            width: 80%;
+        }
+        #left-aside{
+            float: left;
+            padding-top: 10px;
+            text-align: center;
+            width: 200px;
+            background: #0aaabf;
+        }
+        #left-aside .showMe img{
+            width: 100px;
+            height: 100px;
+            border: 3px solid #fff;
+            border-radius: 50%;
+        }
+        #left-aside .weChat img{
+            margin-top: 10px;
+            width: 80%;
+            height: 150px;
+            border-radius: 55% 50% 0 0;
+        }
+        #left-aside .self-skills .name{
+            text-align: left;
+        }
+        .self-skills .name,.skill{
+            display: inline-block;
+        }
+        .lp{
+            padding-left: 240px;
+        }
+        #mainCt{
+            margin: 20px 0;
+            padding-right: 50px;
+            padding-bottom: 20px;
+            background: #eee;
+        }
+        .skill-head{
+            padding: 20px;
+            border-bottom: 1px solid #ccc;
+        }
+        #mainCt .RT{
+            padding: 3px 5px;
+            float: right;
+            margin-top: 1%;
+            border-radius: 10px;
+            background: #0aaabf;
+        }
+        #mainCt .RT a{
+            text-decoration: none;
+            color: white;
+            background: #0aaabf;
+        }
+        .experiance-head{
+            padding: 20px;
+            border-bottom: 1px solid #ccc;
+        }
+        .experiance li a{
+            padding: 5px 10px 5px 10px;
+            border: 1px solid #ccc;
+            border-radius:7px;
+            color: #000;
+            text-decoration: none;
+        }
+        .workExperiance-head{
+            padding: 20px;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+        h4{
+            margin: 0;
+            font-size: 18px;
+            line-height: 22px;
+            height: 22px;
+            font-family: 'Helvetica Neue',Helvetica,'Lucida Grande',Arial,
+            'Hiragino Sans GB',微软雅黑,'WenQuanYi Micro Hei',STHeiti,SimSun,sans-serif;
+        }
+
+    </style>
+</head>
+<body>
+    <aside id="fixRight">
+        <ul>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">PDF简历下载</a></li>
+            <li><a href="#">小作品</a></li>
+            <li><a href="#">github</a></li>
+            <li><a href="http://www.jianshu.com/users/798229bacf62/latest_articles" target="_Blank">简书</a></li>
+        </ul>
+    </aside>
+    <div id="myPresentation">
+        <div id="left-aside">
+            <div>
+                <a href="#" class="showMe"><img src="img/nzPhoto.JPG"></a>
+
+            </div>
+            <ul class="self-information">
+                <li>
+                    <p class="brefIntroduction">Web前端开发</p>
+                </li>
+                <li>
+                    <h3 class="name">聂政</h3>
+                </li>
+                <li>
+                    <p class="age">26岁</p>
+                </li>
+                <li>
+                    <p class="college">湘潭大学</p>
+                </li>
+                <li>
+                    <p class="masters">硕士</p>
+                </li>
+                <li>
+                    <p class="masters">niezheng05@foxmail.com</p>
+                </li>
+                <li>
+                    <p class="weChat">
+                        WeChat: niezheng05
+                        <img src="img/weChat.PNG">
+                    </p>
+                </li>
+            </ul>
+            <div class="self-skills">
+                <ul class="name">
+                    <li>
+                        <p class="html">HTML
+                        </p>
+                    </li>
+                    <li>
+                        <p class="css">CSS
+                        </p>
+                    </li>
+                    <li>
+                        <p class="JS">JS
+                        </p>
+                    </li>
+                    <li>
+                        <p class="jquery">JQUERY
+                        </p>
+                    </li>
+                </ul>
+                <ul class="skill">
+                    <li>
+                        <i class="iconfont">&#xe754;&#xe754;&#xe754;&#xe754;&#xe618;</i>
+                    </li>
+                    <li>
+                        <i class="iconfont">&#xe754;&#xe754;&#xe754;&#xe618;&#xe618;</i>
+                    </li>
+                    <li>
+                        <i class="iconfont">&#xe754;&#xe754;&#xe754;&#xe754;&#xe618;</i>
+                    </li>
+                    <li>
+                        <i class="iconfont">&#xe754;&#xe754;&#xe754;&#xe754;&#xe618;</i>
+                    </li>
+                </ul>
+            </div>
+            <div class="favorite">
+                    <pre>爱好: 羽球 旱冰 KTV 旅游</pre>
+            </div>
+
+        </div>
+        <div id="mainCt" class="lp">
+            <div class="skill-head boldH">
+                Skill、Project .技能、项目
+            </div>
+            <ul class="skill">
+                <li>
+                    <div class="skill1 clear">
+                        <h4>HTML/CSS</h4>
+                        <div class="RT"><a href="#">DEMO</a></div>
+                    </div>
+                    <p>
+                        熟悉 Html/CSS，掌握浮动、定位、盒模型、BFC 等核心概念，掌握常见的网页布局(如圣杯、双飞翼)
+                    </p>
+                </li>
+                <li>
+                    <div class="skill2 clear">
+                        <h4>代码语义化</h4>
+                    </div>
+                    <p>
+                        对代码可读性、规范性、复用性、语义化有一定认识，对CSS兼容有一定经验，能熟练开发符合W3C规范的常见页面
+                    </p>
+                </li>
+                <li>
+                    <div class="skill3 clear">
+                        <h4>原生JS及组件封装</h4>
+                        <div class="RT"><a href="#">DEMO</a></div>
+                    </div>
+                    <p>
+                        熟练使用原生JavaScript，掌握DOM操作、事件、Ajax、Jsonp、闭包、原型链、继承等相关概念的原理和使用方法
+                    </p>
+                </li>
+                <li>
+                    <div class="skill4 clear">
+                        <h4>JQuery常见效果</h4>
+                        <div class="RT"><a href="#">DEMO</a></div>
+                    </div>
+                    <p>
+                        熟练使用JQuery,使用Jquery实现诸如轮播、stickup、tab切换、瀑布流、懒加载、Dialog等效果。
+                    </p>
+                </li>
+                <li>
+                    <div class="skill5 clear">
+                        <h4>常见前端工具的使用</h4>
+                        <div class="RT"><a href="#">DEMO</a></div>
+                    </div>
+                    <p>
+                        熟悉Git、Sublime、WebStorm等前端相关工具的使用
+                    </p>
+                </li>
+            </ul>
+            <div class="experiance-head boldH">
+                Products .作品
+            </div>
+            <ul class="experiance">
+                <li>
+                    <div class="experiance1">
+                        <i class="iconfont">&#xe754;</i>
+                        <a href="products/3/3.html" target="_blank">静态页面</a>
+                    </div>
+                    <p>
+                        HTML/CSS基本性质开发静态页面
+                    </p>
+                </li>
+                <li>
+                    <div class="experiance2">
+                        <i class="iconfont">&#xe754;</i>
+                        <a href="products/5/nav/nav.html" target="_blank">nav效果</a>
+                    </div>
+                    <p>
+                        电商网站常见nav效果
+                    </p>
+                </li>
+                <li>
+                    <div class="experiance4">
+                        <i class="iconfont">&#xe754;</i>
+                        <a href="products/轮播/渐变轮播.html" target="_blank">渐变轮播</a>
+                        <a href="products/轮播/全屏滚动.html" target="_blank">全屏滚动</a>
+                    </div>
+                    <p>
+                        两种常见轮播的实例
+                    </p>
+                </li>
+                <li>
+                    <div class="experiance2">
+                        <i class="iconfont">&#xe754;</i>
+                        <a href="products/9/懒加载.html" target="_blank">懒加载效果(图片链接失效,要修改)</a>
+                    </div>
+                    <p>
+                        懒加载效果的实现
+                    </p>
+                </li>
+                <li>
+                    <div class="experiance2">
+                        <i class="iconfont">&#xe754;</i>
+                        <a href="products/9/回到顶部.html" target="_blank">回到顶部效果</a>
+                    </div>
+                    <p>
+                        回到顶部效果
+                    </p>
+                </li>
+                <li>
+                    <div class="experiance2">
+                        <i class="iconfont">&#xe754;</i>
+                        <a href="products/12/原型链与tab.html" target="_blank">原型链与tab</a>
+                    </div>
+                    <p>
+                        利用JS原型链实现的tab
+                    </p>
+                </li>
+                <li>
+                    <div class="experiance2">
+                        <i class="iconfont">&#xe754;</i>
+                        <a href="products/stick/stick-2.html" target="_blank">stick效果</a>
+
+                    </div>
+                    <p>
+                        sick固定效果
+                    </p>
+                </li>
+                <li>
+                    <div class="experiance3">
+                        <i class="iconfont">&#xe754;</i>
+                        <a href="products/瀑布流布局/瀑布流布局.html" target="_blank">瀑布流布局</a>
+                    </div>
+                    <p>
+                        瀑布流布局的实现
+                    </p>
+                </li>
+
+            </ul>
+            <div class="workExperiance-head boldH">
+                Work Experiance .工作经历
+            </div>
+            <h4>2014.07~2016.06   &nbsp&nbsp&nbsp&nbsp 广东省食品工业研究所</h4>
+        </div>
+    </div>
+    <script src="http://apps.bdimg.com/libs/jquery/1.9.0/jquery.js"></script>
+    <script>
+        var $leftAside = $("#left-aside");
+        console.log($leftAside);
+        $leftAside.css({height: $("#mainCt").height()})
+    </script>
+</body>
+</html>
