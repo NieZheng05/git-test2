@@ -132,11 +132,11 @@
 <body>
     <aside id="fixRight">
         <ul>
-            <li><a href="#">Blog</a></li>
+            <li><a href="http://www.jianshu.com/users/798229bacf62/latest_articles" target="_Blank">Blog</a></li>
             <li><a href="#">PDF简历下载</a></li>
-            <li><a href="#">小作品</a></li>
-            <li><a href="#">github</a></li>
-            <li><a href="http://www.jianshu.com/users/798229bacf62/latest_articles" target="_Blank">简书</a></li>
+            <li><a href="#products">小作品</a></li>
+            <li><a href="https://github.com/NieZheng05"target="_Blank">github</a></li>
+            <li><a href="#">toTop</a></li>
         </ul>
     </aside>
     <div id="myPresentation">
@@ -218,7 +218,7 @@
                 <li>
                     <div class="skill1 clear">
                         <h4>HTML/CSS</h4>
-                        <div class="RT"><a href="#">DEMO(插入圣杯布局小例子)</a></div>
+                        <div class="RT"><a href="products/圣杯布局.html" target="_blank">DEMO</a></div>
                     </div>
                     <p>
                         熟悉 Html/CSS，掌握浮动、定位、盒模型、BFC 等核心概念，掌握常见的网页布局(如圣杯、双飞翼)
@@ -235,7 +235,7 @@
                 <li>
                     <div class="skill3 clear">
                         <h4>原生JS及组件封装</h4>
-                        <div class="RT"><a href="#">DEMO</a></div>
+                        <div class="RT"><a href="products/表单验证.html" target="_blank">DEMO</a></div>
                     </div>
                     <p>
                         熟练使用原生JavaScript，掌握DOM操作、事件、Ajax、Jsonp、闭包、原型链、继承等相关概念的原理和使用方法
@@ -244,7 +244,7 @@
                 <li>
                     <div class="skill4 clear">
                         <h4>JQuery常见效果</h4>
-                        <div class="RT"><a href="#">DEMO</a></div>
+                        <div class="RT"><a href="products/懒加载withJsonp/懒加载withJsonp.html" target="_blank">DEMO</a></div>
                     </div>
                     <p>
                         熟练使用JQuery,使用Jquery实现诸如轮播、stickup、tab切换、瀑布流、懒加载、Dialog等效果。
@@ -253,24 +253,26 @@
                 <li>
                     <div class="skill5 clear">
                         <h4>常见前端工具的使用</h4>
-                        <div class="RT"><a href="#">DEMO</a></div>
+                        <div class="RT"><a href="https://github.com/NieZheng05" target="_blank">DEMO</a></div>
                     </div>
                     <p>
                         熟悉Git、Sublime、WebStorm等前端相关工具的使用
                     </p>
                 </li>
             </ul>
-            <div class="experiance-head boldH">
+            <div id ="products" class="experiance-head boldH">
                 Products .作品
             </div>
             <ul class="experiance">
                 <li>
                     <div class="experiance1">
                         <i class="iconfont">&#xe754;</i>
-                        <a href="products/3/3.html" target="_blank">静态页面</a>
+                        <a href="products/3/3.html" target="_blank">静态页面1</a>
+                        <a href="products/3/3.html" target="_blank">静态页面2</a>
+                        <a href="products/3/3.html" target="_blank">静态页面3</a>
                     </div>
                     <p>
-                        HTML/CSS基本性质开发静态页面
+                        HTML/CSS基本性质开发静态页面,用到了浮动、定位、负margin等特性,页面3有插入表单
                     </p>
                 </li>
                 <li>
@@ -279,39 +281,41 @@
                         <a href="products/5/nav/nav.html" target="_blank">nav效果</a>
                     </div>
                     <p>
-                        电商网站常见nav效果
+                        jQuery的简单方法hide/show实现电商网站常见nav效果
+                    </p>
+                </li>
+                <li>
+                    <div class="experiance3">
+                        <i class="iconfont">&#xe754;</i>
+                        <a href="products/轮播/渐变轮播.html" target="_blank">渐变轮播</a>
+                        <a href="products/轮播/全屏滚动.html" target="_blank">全屏滚动</a>
+                        <a href="products/12/三个轮播.html" target="_blank">多个轮播</a>
+
+                    </div>
+                    <p>
+                        常见轮播的实例,利用fadeIn/fadeOut实现渐变;利用定位和.css()实现滚动轮播;对象原型实现单页多个轮播
                     </p>
                 </li>
                 <li>
                     <div class="experiance4">
                         <i class="iconfont">&#xe754;</i>
-                        <a href="products/轮播/渐变轮播.html" target="_blank">渐变轮播</a>
-                        <a href="products/轮播/全屏滚动.html" target="_blank">全屏滚动</a>
+                        <a href="products/9/懒加载.html" target="_blank">懒加载效果</a>
                     </div>
                     <p>
-                        两种常见轮播的实例
+                        懒加载效果的实现,将图片URL保存在自定义属性中,监听鼠标滚动事件,同时设置图片URL
                     </p>
                 </li>
                 <li>
-                    <div class="experiance2">
-                        <i class="iconfont">&#xe754;</i>
-                        <a href="products/9/懒加载.html" target="_blank">懒加载效果(图片链接失效,要修改)</a>
-                    </div>
-                    <p>
-                        懒加载效果的实现
-                    </p>
-                </li>
-                <li>
-                    <div class="experiance2">
+                    <div class="experiance5">
                         <i class="iconfont">&#xe754;</i>
                         <a href="products/9/回到顶部.html" target="_blank">回到顶部效果</a>
                     </div>
                     <p>
-                        回到顶部效果
+                        简单的scrollTop回到顶部效果
                     </p>
                 </li>
                 <li>
-                    <div class="experiance2">
+                    <div class="experiance6">
                         <i class="iconfont">&#xe754;</i>
                         <a href="products/12/原型链与tab.html" target="_blank">原型链与tab</a>
                     </div>
@@ -320,25 +324,33 @@
                     </p>
                 </li>
                 <li>
-                    <div class="experiance2">
+                    <div class="experiance7">
                         <i class="iconfont">&#xe754;</i>
                         <a href="products/stick/stick-2.html" target="_blank">stick效果</a>
 
                     </div>
                     <p>
-                        sick固定效果
+                        sitck固定效果,通过clone实现的顶部信息栏sick效果
                     </p>
                 </li>
                 <li>
-                    <div class="experiance3">
+                    <div class="experiance8">
                         <i class="iconfont">&#xe754;</i>
                         <a href="products/瀑布流布局/瀑布流布局.html" target="_blank">瀑布流布局</a>
                     </div>
                     <p>
-                        瀑布流布局的实现
+                        瀑布流布局的例子,对于固定宽度的一系列元素,计算单个元素的高度,将后一元素排列到高度最低的元素下面
                     </p>
                 </li>
-
+                <li>
+                    <div class="experiance9">
+                        <i class="iconfont">&#xe754;</i>
+                        <a href="products/3D相册/3D相册.html" target="_blank">3D相册</a>
+                    </div>
+                    <p>
+                        利用css3特性做的3D相册
+                    </p>
+                </li>
             </ul>
             <div class="workExperiance-head boldH">
                 Work Experiance .工作经历
@@ -350,7 +362,10 @@
     <script>
         var $leftAside = $("#left-aside");
         console.log($leftAside);
-        $leftAside.css({height: $("#mainCt").height()})
+        $(window).on("resize",function(){
+            $leftAside.css({height: $("#mainCt").height() + 10})
+        })
+        $leftAside.css({height: $("#mainCt").height() + 10})
     </script>
 </body>
 </html>
