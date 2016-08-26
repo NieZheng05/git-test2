@@ -371,11 +371,11 @@
     <script src="http://apps.bdimg.com/libs/jquery/1.9.0/jquery.js"></script>
     <script>
         var $leftAside = $("#left-aside");
+        $leftAside.css({height: $("#mainCt").height() + 10})
         console.log($leftAside);
         $(window).on("resize",function(){
             $leftAside.css({height: $("#mainCt").height() + 10})
         })
-        $leftAside.css({height: $("#mainCt").height() + 10})
     </script>
 </body>
 </html>
