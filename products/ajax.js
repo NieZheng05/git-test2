@@ -13,7 +13,7 @@ function ajax(opts){    //这里是函数的封装
     }
     var str = "";
     for(var key in opts.data){
-        str += key + "=" + opts.data[key] + "?"
+        str += key + "=" + opts.data[key] + "&"
     }
     str = str.substr(0,str.length-1);
     if(opts.type.toLowerCase()=="get"){
