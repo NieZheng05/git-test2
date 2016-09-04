@@ -1,0 +1,12 @@
+@keyframes moving-yun {
+    0% {
+        right: 0;
+    }
+    100%{
+        left: 0;
+    }
+}
+#moving-yun{
+    border: 2px solid red;
+
+}

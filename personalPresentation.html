@@ -4,141 +4,7 @@
     <meta charset="UTF-8">
     <title>ZhengNie</title>
     <link rel="stylesheet" href="iconfont/star/iconfont.css">
-    <style>
-        body{
-            font-family:'Helvetica Neue',Helvetica,'Lucida Grande',Arial,'Hiragino Sans GB',微软雅黑,'WenQuanYi Micro Hei',STHeiti,SimSun,sans-serif;
-        }
-        html,body,ul,li{
-            margin: 0;
-            padding: 0;
-        }
-        body{
-            background: #ccc;
-        }
-        ul{
-            list-style: none;
-        }
-        .clear{
-            content: "";
-            display: block;
-            clear: both;
-        }
-        .boldH{
-            font-size: 22px;
-            line-height: 22px;
-            color: #0896bf;
-            font-family: 'Helvetica Neue',Helvetica,'Lucida Grande',Arial,
-                'Hiragino Sans GB',微软雅黑,'WenQuanYi Micro Hei',STHeiti,SimSun,sans-serif;
-        }
-        #fixRight{
-            height: 200px;
-            position: fixed;
-            right: 5%;
-            top: 50%;
-            margin-top: -100px;
-            z-index: 99;
-        }
-        #fixRight>ul>li{
-            width: 100px;
-            padding: 5px;
-            background: #ccc;
-            border: 1px solid #ccc;
-            border-radius: 15px;
-            margin: 10px 0;
-        }
-        #fixRight a{
-            text-decoration: none;
-            color: #006400;
-        }
-        #myPresentation{
-            position: relative;
-            margin: 20px auto;
-            width: 80%;
-        }
-        #left-aside{
-            float: left;
-            padding-top: 10px;
-            text-align: center;
-            width: 200px;
-            background: #0aaabf;
-        }
-        #left-aside .showMe img{
-            margin-top: 30%;
-            width: 100px;
-            height: 100px;
-            border: 3px solid #fff;
-            border-radius: 50%;
-        }
-        #left-aside .weChat img{
-            margin-top: 10px;
-            width: 80%;
-            height: 150px;
-            border-radius: 55% 50% 0 0;
-        }
-        #left-aside .my-resume img{
-            margin-top: 20px;
-            height: 160px;
-        }
-        #left-aside .self-skills .name{
-            text-align: left;
-        }
-        .self-skills .name,.skill{
-            display: inline-block;
-        }
-        .lp{
-            padding-left: 240px;
-        }
-        #mainCt{
-            margin: 20px 0;
-            padding-right: 50px;
-            padding-bottom: 20px;
-            background: #eee;
-        }
-        .skill-head{
-            padding: 20px;
-            border-bottom: 1px solid #ccc;
-        }
-        #mainCt .RT{
-            padding: 3px 5px;
-            float: right;
-            margin-top: 1%;
-            border-radius: 10px;
-            background: #0aaabf;
-        }
-        #mainCt .RT a{
-            text-decoration: none;
-            color: white;
-            background: #0aaabf;
-        }
-        .experiance-head{
-            margin-bottom: 10px;
-            padding: 20px;
-            border-bottom: 1px solid #ccc;
-        }
-        .experiance li a{
-            padding: 5px 10px 5px 10px;
-            border: 1px solid #ccc;
-            border-radius:7px;
-            color: #000;
-            text-decoration: none;
-        }
-        .workExperiance-head{
-            padding: 20px;
-            margin-bottom: 10px;
-            border-bottom: 1px solid #ccc;
-        }
-        h4{
-            margin: 0;
-            font-size: 18px;
-            line-height: 22px;
-            height: 22px;
-            font-family: 'Helvetica Neue',Helvetica,'Lucida Grande',Arial,
-            'Hiragino Sans GB',微软雅黑,'WenQuanYi Micro Hei',STHeiti,SimSun,sans-serif;
-        }
-        .self-skills p{
-            text-align: center;
-        }
-    </style>
+    <link rel="stylesheet" href="css/ZhengNie.css">
 </head>
 <body>
     <script src="http://apps.bdimg.com/libs/jquery/1.9.0/jquery.js"></script>
@@ -188,25 +54,25 @@
                     <li>
                         <p class="html">HTML
                         </p>
-                        <i class="iconfont">&#xe754;&#xe754;&#xe754;&#xe754;&#xe618;</i>
+                        <div class="range"><div class="rangeX1"></div></div>
                     </li>
                     <li>
                         <p class="css">CSS
 
                         </p>
-                        <i class="iconfont">&#xe754;&#xe754;&#xe754;&#xe618;&#xe618;</i>
+                        <div class="range"><div class="rangeX2"></div></div>
 
                     </li>
                     <li>
                         <p class="JS">JS
                         </p>
-                        <i class="iconfont">&#xe754;&#xe754;&#xe754;&#xe754;&#xe618;</i>
+                        <div class="range"><div class="rangeX3"></div></div>
 
                     </li>
                     <li>
                         <p class="jquery">JQUERY
                         </p>
-                        <i class="iconfont">&#xe754;&#xe754;&#xe754;&#xe754;&#xe618;</i>
+                        <div class="range"><div class="rangeX4"></div></div>
                     </li>
                 </ul>
             </div>
@@ -369,7 +235,7 @@
             </div>
             <h4>2014.07~2016.06   &nbsp&nbsp&nbsp&nbsp 广东省食品工业研究所</h4>
         </div>
-    </div>
+</div>
     <script src="http://apps.bdimg.com/libs/jquery/1.9.0/jquery.js"></script>
     <script>
         var $leftAside = $("#left-aside");
