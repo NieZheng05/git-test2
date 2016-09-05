@@ -5,7 +5,11 @@
     <title>task37</title>
     <script src="http://apps.bdimg.com/libs/jquery/1.9.1/jquery.js"></script>
     <style>
-
+        #btn{
+            width: 400px;
+            text-align: center;
+            margin: 100px auto;
+        }
         #dl{
             width: 400px;
             position: absolute;
@@ -107,7 +111,7 @@
                     case 1:
                         this.$dl.find(".header").hide();
                         this.$dl.find(".ct a").eq(0).hide();
-                        this.$dl.find("ul").html("<a href='www.jirengu.com'>饥人谷</a>");
+                        this.$dl.find("ul").html("<a href='http://www.jianshu.com/users/798229bacf62/latest_articles'>很高兴认识你</a>");
                         break;
                 }
             },
@@ -148,9 +152,9 @@
                 $("body").on("click","a",function(e){
                     console.log(e)
                     e.stopPropagation();
-                    if(me.idx == 3 || me.idx==4){
-                        alert($(e.target).text());
-                    }
+//                    if(me.idx == 3 || me.idx==4){
+//                        alert($(e.target).text());
+//                    }
                     me.hideDialog();
                 })
             },
@@ -183,7 +187,7 @@
 //        $dl.on("mouseup",function(e){
 //            $dl.removeClass("moving");
 //        })
-//下面为参考代码
+//之前写的代码
 //$("#dl").on('mousedown', function(e) {
 //
 //    var evtX = e.pageX - $("#dl").offset().left,
