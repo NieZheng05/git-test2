@@ -36,7 +36,6 @@ tab.prototype = {
         // })
         $(window).on("mousewheel",function(event,delta,deltaX,deltaY){
             next(delta);
-            showNextOrPre(idx);
         })
         function next(delta){
             if(isPlaying){
@@ -52,6 +51,7 @@ tab.prototype = {
             }if(idx == -1){
                 idx = 4;
             }
+            showNextOrPre(idx);
             setTimeout(function(){
                 isPlaying = false;
             },1500)
@@ -60,10 +60,10 @@ tab.prototype = {
             // this.$mainBg.animate();
             me.$fixTabLi.eq(idx).css({background: "grey"});
             me.$fixTabLi.eq(idx).siblings().css({background: "white"});
-            me.$mainDiv.siblings().hide();
-            me.$mainDiv.eq(idx).show();
-            me.$mainBg.siblings().hide();
-            me.$mainBg.eq(4-idx).show();
+            me.$mainDiv.siblings().fadeOut();
+            me.$mainDiv.eq(idx).fadeIn();
+            me.$mainBg.siblings().fadeOut();
+            me.$mainBg.eq(4-idx).fadeIn();
         }
     }
 }
