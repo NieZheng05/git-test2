@@ -20,17 +20,51 @@ function tab(){
 }
 tab.prototype = {
     bind: function(){
-        var me = this;
+        var me = this,
+            idx = 0,
+            isPlaying = false;
         console.log(this.$mainDiv[1]);
+        $("#window-height").height($(window).height())
         this.$fixTab.on("click","li",function(){
-            var idx = me.$fixTabLi.index($(this));
+            idx = me.$fixTabLi.index($(this));
             $(this).css({background: "grey"});
-            $(this).siblings().css({background: "white"});
+            showNextOrPre(idx);
+        })
+        // $(window).on("resize",function(){
+        //     $("#window-height").height($(window).height())
+        //     console.log($("#window-height").height())
+        // })
+        $(window).on("mousewheel",function(event,delta,deltaX,deltaY){
+            next(delta);
+            showNextOrPre(idx);
+        })
+        function next(delta){
+            if(isPlaying){
+                return;
+            }
+            isPlaying = true;
+            if(delta>0){
+                idx -= 1;
+            }if(delta<0){
+                idx += 1;
+            }if(idx == 5){
+                idx = 0;
+            }if(idx == -1){
+                idx = 4;
+            }
+            setTimeout(function(){
+                isPlaying = false;
+            },1500)
+        }
+        function showNextOrPre(idx){
+            // this.$mainBg.animate();
+            me.$fixTabLi.eq(idx).css({background: "grey"});
+            me.$fixTabLi.eq(idx).siblings().css({background: "white"});
             me.$mainDiv.siblings().hide();
             me.$mainDiv.eq(idx).show();
             me.$mainBg.siblings().hide();
             me.$mainBg.eq(4-idx).show();
-        })
+        }
     }
 }
 var t = new tab();
@@ -77,3 +111,22 @@ Im.prototype = {
     }
 }
 var im = new Im();
+
+// fix-header
+function Resume(){
+    this.header = $("#fix-header")
+    this.resume = $("#fix-header").find("p").eq(1);
+    this.bind();
+}
+Resume.prototype = {
+    bind: function(){
+        var me = this;
+        this.header.on("mouseover",function(){
+            me.resume.text("个人简历")
+        })
+        this.header.on("mouseleave",function(){
+            me.resume.text("前端开发")
+        })
+    }
+}
+var resume = new Resume()
