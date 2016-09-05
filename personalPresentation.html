@@ -19,13 +19,13 @@
     </aside>
     <div id="myPresentation">
         <div id="left-aside">
-            <div>
+<!--             <div>
                 <a href="#" class="showMe"><img src="img/nzPhoto.JPG"></a>
 
             </div>
-            <ul class="self-information">
+ -->            <ul class="self-information">
                 <li>
-                    <p class="brefIntroduction">Web前端开发</p>
+                    <h2 class="brefIntroduction">Web前端开发</h2>
                 </li>
                 <li>
                     <h3 class="name">聂政</h3>
@@ -40,7 +40,9 @@
                     <p class="masters">硕士</p>
                 </li>
                 <li>
+                    <p class="masters">Tel:18520128369</p>
                     <p class="masters">niezheng05@foxmail.com</p>
+
                 </li>
                 <li>
                     <p class="weChat">
@@ -239,10 +241,10 @@
     <script src="http://apps.bdimg.com/libs/jquery/1.9.0/jquery.js"></script>
     <script>
         var $leftAside = $("#left-aside");
-        $leftAside.css({height: $("#mainCt").height() + 10})
+        $leftAside.css({height: $("#mainCt").height() - 30})
         console.log($leftAside);
         $(window).on("resize",function(){
-            $leftAside.css({height: $("#mainCt").height() + 10})
+            $leftAside.css({height: $("#mainCt").height() - 30})
         })
     </script>
 </body>
